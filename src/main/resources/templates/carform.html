@@ -58,37 +58,16 @@
 
         </select>
         <br>
-<!--        <label>Category</label>-->
 
-<!--        <select th:field="*{category}">-->
-<!--            <div th:each="category: ${categories}">-->
-<!--                <option th:value="${category.id}" th:text="${category.name}"></option>-->
-
-<!--            </div>-->
-<!--        </select>-->
-<!--    <label>Model</label>-->
-<!--    <input type="text" th:field="*{model}"/><br />-->
-
-<!--    <label>Model</label>-->
-<!--    <input type="text" th:field="*{model}"/><br />-->
-
+    <label>Upload Image</label>
+        <input type="file" name="file" />
+        <input type="hidden" th:field="*{pic}">
+    <br>
     <input type="submit" value="Submit" />
     </div>
 </form>
 </div>
 
-<!--    <label>Description</label>-->
-<!--    <input type="text" th:field="*{description}" /><br />-->
-
-
-<!--    <label>Posted Date</label>-->
-<!--    <input type="date" class="form-control" th:field="*{postedDate}" /><br />-->
-
-<!--    <label>Author</label>-->
-<!--    <input type="text" class="form-control" th:field="*{author}" /><br />-->
-
-<!--    <label>Phone</label>-->
-<!--    <input type="text" class="form-control" th:field="*{phone}" />-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

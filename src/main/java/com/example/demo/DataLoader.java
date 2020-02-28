@@ -28,6 +28,8 @@ public class DataLoader implements CommandLineRunner {
         car.setModel("ipsum");
         car.setYear("1987");
         car.setMSRP(1.5);
+        car.setPic("img/blue.jpg");
+
 
         Set<Car> cars = new HashSet<>();
         cars.add(car);
@@ -46,6 +48,7 @@ public class DataLoader implements CommandLineRunner {
         car.setModel("dude");
         car.setYear("2005");
         car.setMSRP(3.8);
+        car.setPic("img/sonata.jpg");
 
         cars = new HashSet<>();
         cars.add(car);

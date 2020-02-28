@@ -40,8 +40,9 @@
 
     <div class="row">
         <div th:each="car : ${cars}">
-            <div class="card border-dark bg-light mb-3" style="width: 18rem;">
+            <div class="card border-dark bg-light mb-3" style="width: 18rem; height: 20rem;">
                 <div class="card-header" style="text-align:center;" th:inline="text">[[${car.manufacturer}]] [[${car.model}]]</div>
+                <img class="card-img-top" th:src= "${car.pic}" alt="Card image cap">
                 <div class="card-body">
                     <a th:href="@{/detail/{id}(id=${car.id})}" class="btn btn-warning btn-block">More Info</a>
                 </div>
