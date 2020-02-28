@@ -1,0 +1,19 @@
+.card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: black;
+    /*padding-left: 0;*/
+    /*margin-bottom: 20px;*/
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .nav-item:hover .nav-link {
+    background-color: gray;
+}
