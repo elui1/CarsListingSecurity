@@ -63,4 +63,12 @@ public class HomeController {
         carRepository.deleteById(id);
         return "redirect:/";
     }
+
+    @RequestMapping("/categorylist/{id}")
+    public String showCategory(@PathVariable("id") long id, Model model) {
+        model.addAttribute("cars", carRepository.findAll());
+        model.addAttribute("category", categoryRepository.findById(id).get());
+        return "categorylist";
+    }
+
 }
